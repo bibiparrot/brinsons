@@ -61,12 +61,16 @@ records additional conventions.
 
 ## Install and run
 
-Build the Sphinx HTML guide with `python -m pip install -e ".[docs]"` followed by `python -m sphinx -b html -W --keep-going docs/source docs/_build/html`.
+Install the published package with `python -m pip install brinsons` or add
+`[plot]` for chart functions. To work from this source checkout:
 
 ```sh
 python -m pip install -e .
 python examples/generate.py
 ```
+
+Build the Sphinx HTML guide with `python -m pip install -e ".[docs]"`
+followed by `python -m sphinx -b html -W --keep-going docs/source docs/_build/html`.
 
 The example generates deterministic source data and CSV output in `data/examples/`. The tutorials read reusable Dow 30 CSV tables from `data/dow30_brinson/`; the Yahoo snapshot is `data/dow30_yfinance_data.json`, and the price/sector workbook is `data/dow30/Dow30_prices_sectors.xlsx`. Generated analysis reports, charts, and the analysis workbook remain in `outputs/dow30_brinson/`.
 

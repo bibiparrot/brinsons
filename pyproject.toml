@@ -1,13 +1,24 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "brinsons"
 version = "0.1.0"
 description = "Polars expression based portfolio attribution"
+readme = {file = "PYPI.md", content-type = "text/markdown"}
 requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Bibi Parrot"}]
+keywords = ["Brinson", "performance attribution", "Polars", "portfolio analytics"]
 dependencies = ["polars>=1.35,<2"]
+
+[project.urls]
+Homepage = "https://github.com/bibiparrot/brinsons"
+Documentation = "https://github.com/bibiparrot/brinsons/tree/main/docs/source"
+Repository = "https://github.com/bibiparrot/brinsons"
+Issues = "https://github.com/bibiparrot/brinsons/issues"
 
 [project.optional-dependencies]
 test = ["pytest>=8", "matplotlib>=3.6"]

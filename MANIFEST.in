@@ -1,0 +1,5 @@
+include LICENSE PYPI.md README.md
+recursive-include tests/vendor *.py
+include tests/vendor/README.md tests/vendor/pybrinson/LICENSE tests/vendor/pybrinson/py.typed
+include data/baf/synthetic_daily_positions.csv
+include data/multi_account/positions.csv
