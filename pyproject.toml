@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brinsons"
+version = "0.1.0"
+description = "Polars expression based portfolio attribution"
+requires-python = ">=3.11"
+dependencies = ["polars>=1.35,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "matplotlib>=3.6"]
+plot = ["matplotlib>=3.6"]
+docs = ["sphinx>=8,<10", "myst-parser>=4,<6", "furo>=2025"]
+tutorial = ["jupyterlab>=4", "matplotlib>=3.6", "nbformat>=5", "nbclient>=0.10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests/vendor"]

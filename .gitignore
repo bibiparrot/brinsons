@@ -208,6 +208,22 @@ tempCodeRunnerFile.py
 # Ruff stuff:
 .ruff_cache/
 
+# Local project state and research-only source copies
+.idea/
+.benchmarks/
+.deepeval/
+refers/
+docs/financial-services/
+docs/*.pdf
+docs/*.docx
+docs/*.xlsx
+docs/papers/*.pdf
+docs/papers/*.png
+data/xlsx_work/
+outputs/dow30/
+*.inspect.ndjson
+todo_goal.md
+
 # PyPI configuration file
 .pypirc
 
